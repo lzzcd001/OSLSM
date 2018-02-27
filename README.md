@@ -55,8 +55,8 @@ If you prefer Make, set BLAS to your desired one in Makefile.config. Then run
 6. Run the following to test the models in one-shot setting:
 
 	cd ${OSLSM_HOME}/OSLSM/os_semantic_segmentation
-	python test.py deploy_1shot.prototxt ${TRAINED_MODEL} ${RESULTS_PATH} 1000 fold${FOLD_ID}\_${K_SHOT}\_test
-	
+	python test.py deploy_5shot.prototxt ${TRAINED_MODEL} ${RESULTS_PATH} 1000 fold${FOLD_ID}\_${K_SHOT}\_test
+
 Where `FOLD_ID = {0,1,2,3}` and `K_SHOT={1,5}`. For each fold use the corresponding trained model in the snapshot directory.
 
 Simillarly, run the following to test the models in 5-shot setting:
