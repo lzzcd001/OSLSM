@@ -38,9 +38,9 @@ If you prefer Make, set BLAS to your desired one in Makefile.config. Then run
 	make all -j8
 	make pycaffe
 
-2. Update your $PYTHONPATH: 
+2. Update your `$PYTHONPATH`: 
 
-	export PYTHONPATH='${OSLSM_HOME}/OSLSM/code':'${OSLSM_HOME}/python':$PYTHONPATH
+	export PYTHONPATH=${OSLSM_HOME}/OSLSM/code:${OSLSM_HOME}/python:$PYTHONPATH
 
 
 3. Download PASCAL VOC dataset for few-shot learning: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
