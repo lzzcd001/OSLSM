@@ -26,17 +26,17 @@ If you find OSLSM useful in your research, please consider to cite:
 
 If you have all the packages installed: 
 
-	cd ${OSLSM_HOME}
-	mkdir build
-	cd build
-	cmake ..
-	make all
+		cd ${OSLSM_HOME}
+		mkdir build
+		cd build
+		cmake ..
+		make all
 
 If you prefer Make, set BLAS to your desired one in Makefile.config. Then run
 
-	cd ${OSLSM_HOME}
-	make all -j8
-	make pycaffe
+		cd ${OSLSM_HOME}
+		make all -j8
+		make pycaffe
 
 2. Update your `$PYTHONPATH`: 
 
@@ -61,10 +61,9 @@ Where `FOLD_ID = {0,1,2,3}` and `K_SHOT={1,5}`. For each fold use the correspond
 
 Simillarly, run the following to test the models in 5-shot setting:
 
-	```shell
 	cd ${OSLSM_HOME}/OSLSM/os_semantic_segmentation
 	python test.py deploy_5shot.prototxt ${TRAINED_MODEL} ${RESULTS_PATH} 1000 fold${FOLD_ID}\_${K_SHOT}\_test
-	```
+
 
 7. For training your own models, we have included all prototxts in `${OSLSM_HOME}/OSLSM/os_semantic_segmentation/training` directory and the vgg pre-trained model can be found in `snapshots/os_pretrained.caffemodel`.
 
