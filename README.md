@@ -26,24 +26,27 @@ If you find OSLSM useful in your research, please consider to cite:
 
 If you have all the packages installed: 
 
-		cd ${OSLSM_HOME}
-		mkdir build
-		cd build
-		cmake ..
-		make all
+ ```shell 
+ cd ${OSLSM_HOME}
+ mkdir build
+ cd build
+ cmake ..
+ make all
+ ```
 
 If you prefer Make, set BLAS to your desired one in Makefile.config. Then run
 
-		cd ${OSLSM_HOME}
-		make all -j8
-		make pycaffe
+ ```shell
+ cd ${OSLSM_HOME}
+ make all -j8
+ make pycaffe
+ ```
 
 2. Update your `$PYTHONPATH`: 
 
 	```shell
 	export PYTHONPATH=${OSLSM_HOME}/OSLSM/code:${OSLSM_HOME}/python:$PYTHONPATH
 	```
-
 
 3. Download PASCAL VOC dataset for few-shot learning: http://host.robots.ox.ac.uk/pascal/VOC/voc2012/
 
@@ -54,16 +57,19 @@ If you prefer Make, set BLAS to your desired one in Makefile.config. Then run
 
 6. Run the following to test the models in one-shot setting:
 
+  ```shell
 	cd ${OSLSM_HOME}/OSLSM/os_semantic_segmentation
 	python test.py deploy_5shot.prototxt ${TRAINED_MODEL} ${RESULTS_PATH} 1000 fold${FOLD_ID}\_${K_SHOT}\_test
+  ```
 
-Where `FOLD_ID = {0,1,2,3}` and `K_SHOT={1,5}`. For each fold use the corresponding trained model in the snapshot directory.
+Where `FOLD_ID = 0,1,2, or 3` and `K_SHOT= 1 or 5`. For each fold use the corresponding trained model in the snapshot directory.
 
 Simillarly, run the following to test the models in 5-shot setting:
 
+  ```shell
 	cd ${OSLSM_HOME}/OSLSM/os_semantic_segmentation
 	python test.py deploy_5shot.prototxt ${TRAINED_MODEL} ${RESULTS_PATH} 1000 fold${FOLD_ID}\_${K_SHOT}\_test
-
+  ```
 
 7. For training your own models, we have included all prototxts in `${OSLSM_HOME}/OSLSM/os_semantic_segmentation/training` directory and the vgg pre-trained model can be found in `snapshots/os_pretrained.caffemodel`.
 
@@ -75,7 +81,6 @@ You will also need to
 
 3) Set the profile to `fold${FOLD_ID}\_train` for our data layer (check the prototxt files and `${OSLSM_HOME}/OSLSM/code/ss_datalayer.py`) to work.
 
-
 ### License
 
 The code and models here are available under the same license as Caffe (BSD-2) and the Caffe-bundled models (that is, unrestricted use; see the BVLC model license).
@@ -86,7 +91,9 @@ The code and models here are available under the same license as Caffe (BSD-2) a
 For further questions, you can leave them as issues in the repository, or contact the authors directly:
 
 Amirreza Shaban amirreza@gatech.edu
-Shray Bansal 
+
+Shray Bansal sbansal34@gatech.edu
+
 Zhen Liu liuzhen1994@gatech.edu
 
 
