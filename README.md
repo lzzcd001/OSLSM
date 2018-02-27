@@ -12,12 +12,12 @@ You can find our paper at https://arxiv.org/abs/1709.03410
 
 If you find OSLSM useful in your research, please consider to cite:
 
-  @inproceedings{Shaban-BMVC-17,
-     Author = "Amirreza Shaban and Shray Bansal and Zhen Liu and Irfan Essa and Byron Boots.",
-     booktitle = {Proceedings of the 28th British Machine Vision Conference (BMVC)},
-     Title = "One-Shot Learning for Semantic Segmentation.",
-     year = {2017}
-  }
+    @inproceedings{Shaban-BMVC-17,
+       Author = "Amirreza Shaban and Shray Bansal and Zhen Liu and Irfan Essa and Byron Boots.",
+       booktitle = {Proceedings of the 28th British Machine Vision Conference (BMVC)},
+       Title = "One-Shot Learning for Semantic Segmentation.",
+       year = {2017}
+    }
 
 
 ### Instructions for Testing (tested on Ubuntu 16.04)
