@@ -1,6 +1,8 @@
-# Please fill in Caffe path and dataset paths here
-CAFFE_PATH = '/media/amir/9376dfff-cfcf-48e6-8928-9ffb94c56098/OSLSM'
-PASCAL_PATH= '/media/amir/9376dfff-cfcf-48e6-8928-9ffb94c56098/VOC2012'
+# Please fill in ${OSLSM_HOME} path here
+CAFFE_PATH = 'PATH_TO_OSLSM'
+
+# Download Pascal VOC from http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar
+PASCAL_PATH= 'PATH_TO_VOC2012_DIR'
 COCO_PATH = ''
-BSD_PATH = ''
+SBD_PATH = ''
 
