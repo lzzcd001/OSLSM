@@ -12,7 +12,7 @@ You can find our paper at https://arxiv.org/abs/1709.03410
 
 If you find OSLSM useful in your research, please consider to cite:
 
-@article{shaban2017one,
+@inproceedings{shaban2017one,
 	  title={One-Shot Learning for Semantic Segmentation},
 	  author={Shaban, Amirreza and Bansal, Shray and Liu, Zhen and Essa, Irfan and Boots, Byron},
 	  journal={arXiv preprint arXiv:1709.03410},
